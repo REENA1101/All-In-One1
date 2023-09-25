@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
-import Blogs from '../pages/Blogs'
-import Projects from '../pages/Projects'
+import Counter from '../pages/Counter'
+import Timer from "../pages/Timer"
 import About from '../pages/About'
-import Contact from '../pages/Contact'
+import TodoApp from '../pages/TodoApp'
 
 
 export default function AllRoutes() {
@@ -12,10 +12,11 @@ export default function AllRoutes() {
     <div>
      <Routes>
             <Route exact path="/" element={HomePage} />
-            <Route path="/blogs" element={Blogs} />
-            <Route path="/projects" element={Projects} />
+            <Route path="/timer" element={Timer} />
+            <Route path="/counter" element={Counter} />
+            <Route path="/todoApp" element={TodoApp} />
             <Route path="/about" element={About} />
-            <Route path="/contact" element={Contact} />
+            
       </Routes>
     </div>
   )
