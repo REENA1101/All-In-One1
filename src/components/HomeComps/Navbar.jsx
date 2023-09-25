@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink, Routes, Route  } from "react-router-dom";
+import { MDBIcon } from "mdb-react-ui-kit";
 
 
  const Navbar = () => {
@@ -37,7 +38,11 @@ import { NavLink, Routes, Route  } from "react-router-dom";
               <NavLink to="/contact">About</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Theme</NavLink>
+               
+            <a href="" >
+            <MDBIcon icon='cube' />
+          </a>
+              
             </li>
           </ul>
         </div>

@@ -39,11 +39,12 @@ export default function Footer() {
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon icon="gem" className="me-3" />
+                
+                <MDBIcon icon="diamond" className="me-3" />
               ALL IN ONE .CO
               </h6>
                 <p>
-                  The All In One Co. is a company website which provides the counter, Timer, and the Todo App 
+                  The All In One Co. is a company website which provides the counter, Timer and Todo App 
                   all of these three individual apps in just one website. Enjoy!
                 </p>
             </MDBCol>
@@ -110,14 +111,14 @@ export default function Footer() {
                 <MDBIcon icon="phone" className="me-3" />Call @0123456789
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> Drop a hi on Discord
+                <MDBIcon icon="print" className="me-3" /> Drop a Hey! 
               </p>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
       </section>
 
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)'  }}>
        Find Everything <a className='text-reset fw-bold' href="#" style={{textDecoration: "none"}}>@The All_In_One App</a>
         {/* <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
           MDBootstrap.com
