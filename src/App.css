@@ -18,8 +18,9 @@ body {
 }
 
 .navbar {
+  /* margin-top:5px; */
   height: 60px;
-  background-color: #fef7e5;
+  background-color: #e6d4a7;
   position: relative;
 }
 

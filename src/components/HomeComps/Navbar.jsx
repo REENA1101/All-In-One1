@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { NavLink, Routes, Route  } from "react-router-dom";
-import AllRoutes from "./AllRoutes";
-
 
 
  const Navbar = () => {
@@ -27,16 +25,19 @@ import AllRoutes from "./AllRoutes";
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/blogs">Blogs</NavLink>
+              <NavLink to="/blogs">Counter</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/projects">Timer</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about">Todo App</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/contact">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Theme</NavLink>
             </li>
           </ul>
         </div>
@@ -88,7 +89,7 @@ const Hamburger = () => (
 );
 
 const Logo = () => (
-     <img style={{width: "180px", marginTop:"120px", backgroundColor: "#fef7e5" }} src="https://github.com/REENA1101/All-In-One1/assets/112796706/2c591cb5-926a-4990-be2f-82f47379354f" alt="logo"/>
+     <img style={{width: "180px", height: "58px", backgroundColor: "#fef7e5" }} src="https://github.com/REENA1101/All-In-One1/assets/112796706/996c52e0-c1d1-46ad-8e64-77d04b1f84ed" alt="logo"/>
 
 
 //   <svg
