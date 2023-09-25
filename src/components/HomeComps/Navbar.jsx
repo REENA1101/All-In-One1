@@ -5,10 +5,16 @@ import { MDBIcon } from "mdb-react-ui-kit";
 
  const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [theme, setTheme] = useState(false)
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+
+  const handleToggleTheme=(e)=>{
+    e.preventDefault();
+    setTheme(!theme)
+  }
 
   return (
     <nav className="navbar">
@@ -26,23 +32,27 @@ import { MDBIcon } from "mdb-react-ui-kit";
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/blogs">Counter</NavLink>
+              <NavLink to="/counter">Counter</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Timer</NavLink>
+              <NavLink to="/timer">Timer</NavLink>
             </li>
             <li>
-              <NavLink to="/about">Todo App</NavLink>
+              <NavLink to="/todoApp">Todo App</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">About</NavLink>
+              <NavLink to="/about">About</NavLink>
             </li>
-            <li>
-               
-            <a href="" >
-            <MDBIcon icon='cube' />
-          </a>
-              
+             <li onClick={handleToggleTheme}>
+            {theme ?
+                <a href="" >
+                <MDBIcon icon='cube' />
+              </a>
+              :
+              <a href="" >
+                <MDBIcon icon='circle' />
+              </a>
+            }
             </li>
           </ul>
         </div>
